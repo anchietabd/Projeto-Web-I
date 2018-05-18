@@ -1,0 +1,156 @@
+@charst "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Libre+Barcode+39+Text'); /* importação por google fonts */
+@font-face{
+	font-family: FonteLogo;
+	src: url("../_fonts/");
+}
+
+body{
+	font-family: Arial, sans-serif;
+	background-color: rgb(215, 225, 235);
+	color: rgba(0,0,0,1);
+}
+
+
+
+/* formatação da interface */
+div#interface{ /* delimitação da tela do site */
+	width: 1150px;
+	background-color: white;
+	margin: -20px auto 0px auto; /* margem da área externa da página */
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* cria sombra em volta do objeto*/
+	padding: 10px; /* margem da área interna da página */
+}
+
+
+/* formatação do cabeçalho */
+header#cabecalho{
+	border-bottom: 1px black solid; /* largura, cor e formato da borda */
+	height: 60px;
+}
+
+
+header#cabecalho h1{
+	font-family: 'Indie Flower', cursive;
+	font-size: 35pt;
+	color: rgb(255, 138, 58);
+	text-shadow: 1px 1px 1px rgba(0,0,0, .6); 
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+
+/* formatação dos parágrafos*/
+p{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+
+
+/* formatação do menu*/
+nav#menu{ /* quando houver id, usa-se jogo da velha */
+	display: block; /* permite que o menu flutue */
+}
+
+nav#menu ul{
+	list-style: none; /* some com os marcadores*/
+	text-transform: uppercase; /* as letras ficam maiúsculas*/
+	position: absolute; /* bloco flutue por cima dos documentos */
+	top: -20px; /* distância para cima*/
+	left: 700px; /* distância para a esquerda */
+}
+
+nav#menu li{
+	display: inline-block; /* exibe o bloco em uma mesma linha */
+	background-color: rgb(201, 209, 217); /* cor de fundo */
+	padding: 10px; /* cria um espaço entre os blocos */
+	margin: 4px; /* controla o espaço fora dos blocos */
+	transition: background-color 1s;
+}
+
+nav#menu li:hover{ /* efeito aplicado quando mover o mouse por cima do botão" */
+	background-color: rgb(138, 138, 230);
+}
+
+nav#menu h1{
+	display: none; /* esconde o nome "Menu Principal" */
+}
+
+nav#menu a{
+	color: black;
+	text-decoration: none; /* retira o sublinhado do link" */
+}
+
+nav#menu a:hover{
+	color: white; /* cor do link*/
+	text-decoration: underline; /* link sublinhado */
+}
+
+
+
+
+/*formatação do corpo do site*/
+section#corpo{
+	display: block; /*ser mostrada como um bloco*/
+	width: 1150px; /*largura*/
+	float: center; /*bloco flutuar no centro*/
+}
+
+
+
+
+
+article#noticia-principal h2{
+	font-size: 13pt;
+	color: black;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+
+
+header#cabecalho-artigo h1{
+	font-family: 'Indie Flower', cursive;
+	font-size: 20pt;
+	color: rgb(138, 138, 230);
+	margin: 0px;
+	margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+	font-size: 13pt;
+	color: rgb(144, 143, 189);
+	margin: 0px;
+}
+
+header#cabecalho-artigo h3{
+	font-size: 12px;
+	color: #606060;
+}
+
+.direita{
+	
+}
+
+
+
+/*formatação do rodapé*/
+footer#rodape{
+	clear: both; /*limpar a configuração dos dois lados */
+	border-top: 1px solid black;
+}
+
+footer#rodape p{
+	text-align: center;	/*parágrafo centralizado*/
+	
+}
+
+a{
+	color: rgb(138, 138, 230); 
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}

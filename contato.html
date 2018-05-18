@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+	
+<head>
+	<meta charset="UTF-8"/>
+	<title>Pet-Atividade</title>
+	<link rel="stylesheet" href="_css/estilo.css"/>
+	<link rel="stylesheet" href="_css/contato.css"/>
+</head>
+	
+	
+	
+<body>
+<div id="interface">
+<header id="cabecalho">
+
+<hgroup>
+	<h1>Pet-Atividade</h1>
+	<h2></h2>
+</hgroup>
+	
+	
+<img src=""/>
+	<nav id="menu">
+	<h1>Menu Principal</h1>
+	<ul>
+		<li><a href="index01.html">Home</a></li>
+		<li><a href="sobre.html">Sobre</a></li>
+		<li><a href="fotos.html">Fotos</a></li>
+		<li><a href="multimidia.html">Multímidia</a></li>
+		<li><a href="contato.html">Contato</a></li>
+	</ul>
+</nav>	
+</header>
+
+	
+<section id="corpo">
+<article id="noticia-principal">
+	
+	<header id="cabecalho-artigo">
+<hgroup>
+	<h1>Saiba tudo sobre adoção de animais</h1>
+	<h2>por IFPE</h2>
+	<h3 class="direita">Atualizado em 20/04/2018</h3>
+</hgroup>
+	</header>
+	
+	
+	
+	
+	
+	
+<form method="post" id="fContato" action="mailto:upe.upeduca@gmail.com">
+<!-- get - rápido e menos seguro -->
+<!-- post - lento e mais seguro -->
+<!-- action : para onde os dados serão enviados -->
+
+	
+	
+<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+<!-- fieldser : cria um conjunto de campos   / legend : legenda de um conjunto de campos  /   -->
+	<p> <label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="50" placeholder="Nome Completo" /></p>
+<!-- type - cria caixa de texto -->
+<!-- todos devem possuir name e id, com nomes diferentes -->
+<!-- size : tamanho da caixa em caracteres (quantos caracteres simultaneos aparecem -->
+<!-- maxlength : comprimento máximo - permite 50 caracteres -->
+<!-- placeholder : dica ao usuário -->
+<!-- label, for - permite clicar no nome -->
+	<p> <label for="cEmail">Email:</label> <input type="email" name="tEmail" id="cEmail" size="20" maxlength="50" placeholder="Digite Email"/></p>
+	<p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="Digite Senha"/> </p>
+			
+		
+		
+	
+<fieldset id="sexo"><legend>Sexo:</legend> 
+	<input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Feminino</label> <br/>
+	<input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Masculino</label></fieldset>
+</fieldset>
+<!-- name : com nomes iguais, para que ele marque apenas os objetos necessários -->		
+<!-- label : referencia objetos a seus ids -->
+<!-- label, for - permite clicar em cima da palavra -->
+<!-- checked - o campo masculino fica marcado -->
+
+	
+<p><label for="cNasc">Data de Nascimento:</label> 
+	<input type="date" name="tNasc" id="cNasc"/></p>
+		
+	
+	
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+	<p><label for="cRua">Logradouro:</label> 
+	<input type="text" name="tRua" id="cRua" size="10" maxlength="80" placeholder="Rua, Av, Trav, ..."/></p>
+	<p><label for="cNum">Número:</label> 
+	<input type="number" name="tNum" id="cNum" min="0" max="9999" placeholder="nº"/></p>
+	<!-- min : minimo valor que será aceito ; max : máximo valor que será aceito -->
+	<p><label for="cCid">Cidade:</label>
+	<input type="text" name="tCid" id="cCid" maclength="40" size="20" placeholder="Digite a Cidade" list="cidades"/></p>
+			<datalist id="cidades">
+				<option value="Pernambuco"></option>
+				<option value="Recife"></option>
+				<option value="Garanhuns"></option>
+				<option value="Caruaru"></option> 
+			</datalist>
+<!-- datalist - lista de elementos predefinidos -->
+		
+			<p><label for="cEst">Estado:</label>
+			<select name="tEst" id="cEst">
+				<optgroup label="Região Nordeste">	
+					<option value="PE" selected>Pernambuco</option>
+					<option value="PB">Paraiba</option>
+					<option value="CE">Ceará</option>
+				</optgroup>
+			</select>
+		</fieldset>
+	
+<!-- select : cria caixas combinadas -->
+<!-- optgroup - grupo de opção -->
+<!-- selected - deixar uma opção em destaque -->
+	
+		<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+			<p><label for="cUrg">Grau de Urgência:</label>
+			Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+			
+			<p><label for="cMsg">Mensagem:</label>
+				<textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder=""></textarea></p>
+		</fieldset>
+	
+		<input type="submit" value="Enviar"/>
+	</form>
+	
+	
+</article>
+</section>
+	
+<footer id="rodape">
+<p>Copyright &copy; 2018 - by IFPE <br/>
+	<a href="http://facebook.com" target="_blank">Facebook</a></p>
+</footer>
+	
+</div>
+</body>
+</html>

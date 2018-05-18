@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* formatação das fotos home */
+#fotos-menu{
+	width: 700px;
+	margin: 0 auto;
+	padding: 50px;
+	overflow: hidden;
+	list-style: none;
+}
+
+/* formatação para cada li */
+#fotos-menu li{
+	float: left; /* flutuar um ao lado do outro */
+	width: 200px;
+	height: 200px; /* altura */
+	margin: 10px;
+	border: 5px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.4); /* efeito de sombra - canal alfa */
+	-webkit-transition: all .4s ease-in; /* todos os efeitos ; tempo de transição */
+}
+
+
+/* configuração dos spans */
+#fotos-menu li span{
+	opacity: 0; /* some com a legenda da foto */
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	background-color: rgba(0,0,0,.3); /* preto meio transparente */
+	font-size: 9pt;
+	line-height: 370px; /* leganda na parte de baixo da foto */
+	padding: 5px; /* largura do fundo */
+}
+
+
+/* efeito na legenda das fotos */
+#fotos-menu li:hover span{
+	opacity: 1; /* legenda aparece apenas quando passar o mouse por cima */
+}
+
+
+/* efeito no próprio li */
+#fotos-menu li:hover{
+	-webkit-transform: scale(1.5); /* ampliação */
+}
+
+/* fotos */
+.foto-hover {
+	background-color: white;
+}
+
+.foto-hover:hover{
+	background-position: 0px 0px; /* efeito para quando o mouse passar por cima */
+	background-size: 200px 200px; /* reduz a tela quando o mouse passa por cima */
+}
+
+#foto01{
+	background: url('../_imagens/foto01.jpg') no-repeat center;
+}
+
+#foto02{
+	background: url('../_imagens/foto02.jpg') no-repeat center;
+}
+
+#foto03{
+	background: url('../_imagens/foto03.jpg') no-repeat center;
+}
+
+#foto04{
+	background: url('../_imagens/foto04.jpg') no-repeat center;
+}
+
+#foto05{
+	background: url('../_imagens/foto05.jpg') no-repeat center;
+}
+
+#foto06{
+	background: url('../_imagens/foto06.jpg') no-repeat center;
+}
+
+#foto07{
+	background: url('../_imagens/foto07.jpg') no-repeat center;
+}
+
+#foto08{
+	background: url('../_imagens/foto08.jpg') no-repeat center;
+}
+
+#foto09{
+	background: url('../_imagens/foto09.jpg') no-repeat center;
+}
+
+#foto10{
+	background: url('../_imagens/foto10.jpg') no-repeat center;
+}
+
+#foto11{
+	background: url('../_imagens/foto11.jpg') no-repeat center;
+}
+
+#foto12{
+	background: url('../_imagens/foto12.jpg') no-repeat center;
+}
+
+#foto13{
+	background: url('../_imagens/foto13.jpg') no-repeat center;
+}
+
+#foto14{
+	background: url('../_imagens/foto14.jpg') no-repeat center;
+}
+
+#foto15{
+	background: url('../_imagens/foto15.jpg') no-repeat center;
+}
+
+#foto16{
+	background: url('../_imagens/foto16.jpg') no-repeat center;
+}
+
+#foto17{
+	background: url('../_imagens/foto17.jpg') no-repeat center;
+}
+
+#foto18{
+	background: url('../_imagens/foto18.jpg') no-repeat center;
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+frame#video{
+	display: block;
+	position: relative;
+	left: 100px;
+	top: 100px;
+	width: 440px;
+	right: 100px;
+	left: 100px;
+}
